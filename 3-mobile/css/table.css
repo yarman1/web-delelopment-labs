@@ -135,7 +135,7 @@ main {
 
 .main-menu li {
   float: left;
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   height: 100%;
 }
 
