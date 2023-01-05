@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: none; /* for Firefox */
+  /* color: #0D1B2A; */
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  padding: 0 260px 0 260px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 85%;
+}
+
+.logo img {
+  width: 65px;
+  height: auto;
+}
+
+.header-menu {
+  height: 100%;
+}
+
+.header-menu img {
+  height: 45px;
+  width: auto;
+  display: none;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  height: 100%;
+  float: left;
+  width: calc(100% / 5);
+}
+
+a {
+  color: black;
+  display: grid;
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+  height: 100%;
+  justify-content: center;
+  /* font-size: 1.2em; */
+  align-items: center;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #82e953;
+  transition: 0.5s;
+}
+
+a span {
+  align-self: center;
+}
+
+/* header end */
+
+/* main */
+
+main {
+  min-height: 794px;
+  height: fit-content;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  height: 185px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.title-text, .title-image {
+  width: 100%;
+}
+
+.title-text {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.title-text h1 {
+  font-weight: 100;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 40px 0 10px 0;
+  letter-spacing: 3px;
+}
+
+.title-image {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 0 0;
+}
+
+.info {
+  width: 100%;
+  min-height: calc(100vh - 185px - 60px - 90px);
+  background-image: url("../image-data/big-girl-new.png");
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 118px);
+  background-size: 350px;
+  padding: 0 0 415px 0;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 230px 230px 230px;
+  justify-items: center;
+  justify-content: center;
+  gap: 15px 0;
+}
+
+.info-block {
+  width: 210px;
+  height: 210px;
+  background-color: #ffffff;
+  box-shadow: 2px 5px 20px rgba(117, 114, 114, 0.644);
+  padding: 10px 15px 10px 15px;
+  transition: 0.5s;
+}
+
+.info-block:hover {
+  box-shadow: 2px 5px 20px rgba(37, 36, 36, 0.644);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.info-title {
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+.info-text {
+  color: #666362
+}
+
+/* main end */
+
+/* footer */
+
+footer {
+  background-color: #333333;
+  height: 90px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: white;
+  width: 335px;
+  text-align: center;
+}
+
+/* footer end */
+
+@media screen and (max-width: 1069px) {
+  /* header */
+  header {
+    padding: 0 65px 0 65px;
+  }
+
+  ul {
+    background-color: #ffffff;
+    height: fit-content;
+    display: none;
+    min-width: 170px;
+    position: absolute;
+    z-index: 1;
+    right: 15px;
+    top: 60px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    border-radius: 5px;
+  }
+
+  li {
+    height: fit-content;
+    width: 100%;
+    float: none;
+    transition: 0.5s;
+    /* padding: 12px 16px; */
+  }
+
+  li a {
+    height: 40px;
+    width: 100%;
+    padding: 0;
+  }
+
+  li:hover {
+    background-color: #f1f0f0;
+    transition: 0.5s;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-menu img {
+    display: block;
+  }
+
+  .header-menu:hover {
+    cursor: pointer;
+  }
+
+  .header-menu:hover ul{
+    display: block;
+  }
+  /* header */
+
+  /* main */
+
+  .title-text h1 {
+    font-size: 1.7em;
+  }
+
+  .grid-container {
+    grid-template-columns: 370px;
+    gap: 20px 0;
+  }
+
+  .info-block {
+    width: 330px;
+    height: 160px;
+  }
+
+  .info {
+    background-image: url("../image-data/small-girl.png");
+    background-position: center calc(100% - 65px);
+    background-size: 330px;
+  }
+
+  /* main end */
+}
