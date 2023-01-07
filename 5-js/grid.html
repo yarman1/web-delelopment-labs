@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>R6 wiki</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/5de2e144dc.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loader()">
+  <main>
+    <div id="grid-table">
+      <header>
+        <div id="header-text"> 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus sit amet orci ac posuere. Donec et consequat libero. KFJN kjer kfjr kejfrnk wkjbfr mbwufb
+          </p>
+        </div>
+        <div class="title">
+          <div id="control-panel">
+            <div id="replace"><button name="replace" onclick="replaceContent('main-item-2', 'main-item-5')">Replace</button><br></div>
+            <div id="area">
+              <span>Base 1:</span><input type="value" name="base1" id="base1">
+              <span>Base 2:</span><input type="value" name="base2" id="base2"><br>
+              <span>Height:</span><input type="value" name="height" id="height"><br>
+              <button name="trapeze-area" onclick="showTrapezeArea()">Get trapeze area</button>
+            </div>
+            <form id="change-text">
+              <span>Change text in fourth block: </span><br>
+              <input type="radio" id="upper" name="change" value="Upper">
+              <label for="changeChoice1">Upper</label>
+
+              <input type="radio" id="lower" name="change" value="Lower" checked>
+              <label for="changeChoice2">Lower</label>
+            </form>
+          </div>
+          <div id="title-text">
+            <h1><span onclick="generateImage()">CLICK ON ME</span></h1>
+          </div>
+        </div>
+      </header>
+    <div class="main-block main-item-1">
+      <p>
+        Marius Streicher was born in Düsseldorf, Germany. He was raised by his uncle who was a mechanic with the Bundespolizei (BPOL) Aviation Group. As a result, Streicher was around engines and motors at an early age. While he demonstrated skills in mechanics, it didn't hold the challenge that he was looking for. Since he had an affinity for complex machinery, his uncle encouraged him to study aeronautical engineering at university, but the strict academic form was an uncomfortable fit for him. So while Streicher's grades were acceptable, he had a tendency toward restless antics. Following his hobby and passion for flying, he spent considerable time around pilots and aircraft.
+      </p>
+    </div>
+    <div id="main-item-2" class="main-block main-item-2 main-menu">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum commodo elit in scelerisque.
+      </p>
+    </div>
+    <div class="main-block main-item-3" id="main-item-3">
+      <p id="changing-text">
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. pellentesque quis ante felis. nullam at urna posuere, lobortis ipsum nec, vestibulum lacus. lorem ipsum dolor sit amet, consectetur adipiscing elit. fusce rhoncus convallis ipsum ac placerat. in at ultricies lorem, et accumsan turpis. quisque libero nisi, mattis a sollicitudin non, hendrerit et mauris. cras posuere ut massa id feugiat. curabitur convallis consequat mauris in tincidunt. suspendisse a dolor facilisis ex lacinia volutpat in vel risus. maecenas sed dictum purus.
+      </p>
+      <div id="images">
+      </div>
+    </div>
+    <div class="main-block main-item-4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum commodo elit in scelerisque. Maecenas condimentum dictum hendrerit. Aliquam placerat, eros id tristique lobortis, ex nibh varius ante, vel placerat risus ipsum nec enim. Mauris vehicula sollicitudin turpis, non fermentum turpis feugiat sit amet. Donec ut elit et nisl fermentum vehicula auctor ut arcu. Proin venenatis eget eros sit amet placerat. Pellentesque at leo eget libero finibus accumsan. Nulla facilisi. Etiam tempor sapien sit amet tortor imperdiet porta. Pellentesque commodo lacinia fringilla. Nulla hendrerit sodales fringilla.
+      </p>
+      <p id="trapeze-result">
+
+      </p>
+      <div id="divisor-form">
+        <!-- <span>Input number:</span><input type="value" name="number" id="number">
+        <button name="find-divisors" onclick="showDivisors()">Get divisers</button><br> -->
+      </div>
+    </div>
+    <div id="main-item-5" class="main-block main-item-5">
+      <p>
+        "Uses an Active Defense system to intercept grenades before they detonate."
+— ADS-MKIV "Magpie" Description
+      </p>
+    </div>
+    <footer>
+      <div id="header-text"> 
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus sit amet orci ac posuere. Donec et consequat libero. KFJN kjer kfjr kejfrnk wkjbfr mbwufb 
+        </p>
+      </div>
+      <div class="title">
+        <div id="title-text">
+          <h2><span>Time for distraction!</span></h2>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </main>
+</body>
+<script src="script/script.js">
+
+</script>
+</html>

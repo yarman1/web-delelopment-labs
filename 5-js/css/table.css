@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scrollbar-width: none; /* for Firefox */
+  color: #0D1B2A;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+}
+
+tr {
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  min-height: 125px;
+  height: 125px;
+  background-color: #778DA9;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+.header-text {
+  width: 50%;
+  float: left;
+  height: 100%;
+  min-height: 77px;
+  display: table;
+}
+
+.header-text > p {
+  text-align: left;
+  display: table-cell; 
+  vertical-align: middle; 
+  margin: 0;
+}
+
+.title {
+  width: 50%;
+  float: right; 
+  height: 100%;
+  min-height: 77px;
+}
+
+.title .title-text {
+  float: right;
+  width: 400px;
+  height: 100%;
+  display: table;
+}
+
+.title-container {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+.title-text h1, .title-text h2 {
+  background-color: white;
+  display: table; 
+  height: 101px;
+  margin: 0;
+  width: 100%;
+}
+
+h1 span, h2 span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-title {
+  text-align: right;
+}
+
+/* header end */
+
+/* main */
+
+main {
+  height: calc(100%);
+}
+
+.main-block {
+  padding: 10px;
+}
+
+.main-block p {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.main-item-1 { 
+  text-align: center;
+  background-color: #f0d6b1;
+  min-width: 250px;
+  height: 630px;
+  max-width: 423px;
+  width: 20%;
+}
+
+.main-item-2 { 
+  background-color: #bef0b1;
+  min-height: 81px;
+  max-height: 82px;
+  height: 82px;
+  width: 45%;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #415A77;
+  height: 61px;
+}
+
+.main-menu li {
+  float: left;
+  width: calc(100% / 2);
+  height: 100%;
+}
+
+.main-menu a {
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  height: 100%;
+  justify-content: center;
+  font-size: 1.2em;
+  display: table;
+  width: 100%;
+}
+
+.main-menu a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main-menu a:hover {
+  background-color: #39516b;
+}
+
+.main-item-3 {
+  background-color: #f0d6b1;  
+  min-height: 719px;
+  min-width: 250px;
+  width: 20%;
+}
+
+.main-item-3 li {
+  margin: 30px 0px 30px 0px;
+  padding-right: 70px;
+  /* padding: 0 20px 0 0px; */
+}
+
+ol {
+  /* list-style-position: outside; */
+  padding-left: 120px;
+}
+
+/* ol li::marker {
+  position: relative;
+  right: -100px;
+} */
+
+.main-item-4 .map-image {
+  width: 500px;
+  height: 290px;
+  
+}
+
+.main-item-4 .default-image {
+  width: 500px;
+  height: 271px;
+}
+
+.main-item-5 {
+  background-color: #bef0b1;
+  height: fit-content;
+  min-height: 85px;
+  padding: 0;
+}
+
+.main-item-5 > p {
+  min-height: 85px;
+  margin: 0;
+  display: table;
+}
+
+.par > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#main-table {
+  min-height: 100%;
+  height: 100%;
+}
+
+#main-table > div {
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 2px solid black;
+}
+
+td {
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 2px solid black;
+}
+
+/* main end */
+
+/* footer */
+
+.footer {
+  width: 100%;
+  min-height: 125px;
+  height: 125px;
+  background-color: #778DA9;
+  padding: 10px 20px 10px 20px;
+  border: 0;
+  border-top: 2px solid black; 
+}
+
+/* footer end */
