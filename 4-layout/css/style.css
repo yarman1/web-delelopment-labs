@@ -186,6 +186,10 @@ footer {
 /* footer end */
 
 @media screen and (max-width: 1069px) {
+  * {
+    font-size: 1.03em;
+  }
+
   /* header */
   header {
     padding: 0 65px 0 65px;
@@ -248,13 +252,13 @@ footer {
   }
 
   .grid-container {
-    grid-template-columns: 370px;
+    grid-template-columns: 100%;
     gap: 20px 0;
   }
 
   .info-block {
-    width: 330px;
-    height: 160px;
+    width: 500px;
+    height: 200px;
   }
 
   .info {
@@ -264,4 +268,8 @@ footer {
   }
 
   /* main end */
+
+  footer {
+    height: 130px;
+  }
 }
