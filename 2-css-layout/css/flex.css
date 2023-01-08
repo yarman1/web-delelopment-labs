@@ -202,3 +202,10 @@ footer {
 }
 
 /* footer end */
+
+@media screen and (max-width: 1093px){
+  .main-item-4 .map-image {
+    width: 95%;
+    height: auto;
+  }
+}
