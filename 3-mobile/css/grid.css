@@ -150,6 +150,7 @@ ol li::marker {
 }
 
 .main-item-4 {
+  width: 100%;
   grid-area: main-info;
   grid-template-rows: 1fr;
 }
@@ -213,7 +214,7 @@ footer {
 
 /* footer end */
 
-@media screen and (max-device-width: 1055px) {
+@media screen and (max-width: 1079px) {
   .main-item-4 .map-image {
     width: 80%;
     height: auto;
